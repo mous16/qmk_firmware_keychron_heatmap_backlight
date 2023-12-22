@@ -18,8 +18,14 @@
 
 // clang-format off
 #ifdef RGB_MATRIX_ENABLE
+<<<<<<< HEAD:keyboards/keychron/q6_pro/ansi_encoder/ansi_encoder.c
 const ckled2001_led g_ckled2001_leds[RGB_MATRIX_LED_COUNT] = {
 /* Refer to CKLED2001 manual for these locations
+=======
+
+const snled27351_led_t PROGMEM g_snled27351_leds[SNLED27351_LED_COUNT] = {
+/* Refer to SNLED27351 manual for these locations
+>>>>>>> remotes/QMK/develop:keyboards/keychron/q5/ansi/ansi.c
  *   driver
  *   |  R location
  *   |  |       G location

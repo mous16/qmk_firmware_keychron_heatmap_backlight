@@ -18,8 +18,14 @@
 
 // clang-format off
 #ifdef RGB_MATRIX_ENABLE
+<<<<<<< HEAD:keyboards/keychron/q3_pro/iso_encoder_se/iso_encoder_se.c
 const ckled2001_led g_ckled2001_leds[RGB_MATRIX_LED_COUNT] = {
 /* Refer to CKLED2001 manual for these locations
+=======
+
+const snled27351_led_t PROGMEM g_snled27351_leds[SNLED27351_LED_COUNT] = {
+/* Refer to SNLED27351 manual for these locations
+>>>>>>> remotes/QMK/develop:keyboards/keychron/q3/iso_encoder/iso_encoder.c
  *   driver
  *   |  R location
  *   |  |       G location
@@ -123,4 +129,9 @@ const ckled2001_led g_ckled2001_leds[RGB_MATRIX_LED_COUNT] = {
     {1, F_1,    D_1,    E_1},
     {1, I_2,    G_2,    H_2},
 };
+<<<<<<< HEAD:keyboards/keychron/q3_pro/iso_encoder_se/iso_encoder_se.c
 #endif
+=======
+
+#endif // RGB_MATRIX_ENABLE
+>>>>>>> remotes/QMK/develop:keyboards/keychron/q3/iso_encoder/iso_encoder.c

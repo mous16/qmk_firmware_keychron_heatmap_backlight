@@ -15,11 +15,21 @@
  */
 
 #include "quantum.h"
+<<<<<<< HEAD:keyboards/keychron/q6_pro/iso_encoder/iso_encoder.c
 
 // clang-format off
 #ifdef RGB_MATRIX_ENABLE
 const ckled2001_led g_ckled2001_leds[RGB_MATRIX_LED_COUNT] = {
 /* Refer to CKLED2001 manual for these locations
+=======
+
+#ifdef RGB_MATRIX_ENABLE
+
+// clang-format off
+
+const snled27351_led_t PROGMEM g_snled27351_leds[SNLED27351_LED_COUNT] = {
+/* Refer to SNLED27351 manual for these locations
+>>>>>>> remotes/QMK/develop:keyboards/keychron/q5/iso/iso.c
  *   driver
  *   |  R location
  *   |  |       G location

@@ -16,6 +16,7 @@
 
 #pragma once
 
+<<<<<<< HEAD:keyboards/keychron/q8_pro/halconf.h
 #define _CHIBIOS_HAL_CONF_VER_8_0_
 
 #define HAL_USE_I2C TRUE
@@ -29,4 +30,8 @@
 #    define HAL_USE_RTC TRUE
 #endif
 
+=======
+#define HAL_USE_PWM TRUE
+
+>>>>>>> remotes/QMK/develop:keyboards/cannonkeys/crin/halconf.h
 #include_next <halconf.h>

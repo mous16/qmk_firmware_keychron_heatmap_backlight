@@ -59,10 +59,18 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 };
 
 #if defined(ENCODER_MAP_ENABLE)
+<<<<<<< HEAD:keyboards/keychron/q3_pro/ansi_encoder/keymaps/default/keymap.c
 const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][2] = {
     [MAC_BASE] = { ENCODER_CCW_CW(KC_VOLD, KC_VOLU)},
     [MAC_FN]   = { ENCODER_CCW_CW(RGB_VAD, RGB_VAI)},
     [WIN_BASE] = { ENCODER_CCW_CW(KC_VOLD, KC_VOLU)},
     [WIN_FN]   = { ENCODER_CCW_CW(RGB_VAD, RGB_VAI)},
+=======
+const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][NUM_DIRECTIONS] = {
+    [MAC_BASE] = {ENCODER_CCW_CW(KC_VOLD, KC_VOLU) },
+    [MAC_FN]   = {ENCODER_CCW_CW(RGB_VAD, RGB_VAI) },
+    [WIN_BASE] = {ENCODER_CCW_CW(KC_VOLD, KC_VOLU) },
+    [WIN_FN]   = {ENCODER_CCW_CW(RGB_VAD, RGB_VAI) }
+>>>>>>> remotes/QMK/develop:keyboards/keychron/q3/ansi_encoder/keymaps/keychron/keymap.c
 };
 #endif // ENCODER_MAP_ENABLE

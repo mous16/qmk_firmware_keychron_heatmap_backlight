@@ -57,3 +57,29 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______,            _______,  _______,  _______,  _______,  BAT_LVL,  NK_TOGG,  _______,  _______,  _______,  _______,  _______,           _______,           _______,           _______, _______, _______, _______,
         _______,  _______,  _______,  _______,                     _______,                       _______,  _______,  _______,  _______,           _______, _______,  _______,  _______, _______,          _______        ),
 };
+<<<<<<< HEAD:keyboards/keychron/k5_pro/jis/rgb/keymaps/default/keymap.c
+=======
+
+// clang-format on
+
+#if defined(ENCODER_MAP_ENABLE)
+const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][NUM_DIRECTIONS] = {
+    [MAC_BASE] = {ENCODER_CCW_CW(KC_VOLD, KC_VOLU) },
+    [MAC_FN]   = {ENCODER_CCW_CW(RGB_VAD, RGB_VAI) },
+    [WIN_BASE] = {ENCODER_CCW_CW(KC_VOLD, KC_VOLU) },
+    [WIN_FN]   = {ENCODER_CCW_CW(RGB_VAD, RGB_VAI) }
+};
+#endif // ENCODER_MAP_ENABLE
+
+void housekeeping_task_user(void) {
+    housekeeping_task_keychron();
+}
+
+bool process_record_user(uint16_t keycode, keyrecord_t *record) {
+    if (!process_record_keychron(keycode, record)) {
+        return false;
+    }
+
+    return true;
+}
+>>>>>>> remotes/QMK/develop:keyboards/keychron/q3/jis_encoder/keymaps/keychron/keymap.c

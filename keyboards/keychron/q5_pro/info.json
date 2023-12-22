@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD:keyboards/keychron/q5_pro/info.json
     "keyboard_name": "Keychron Q5 Pro",
     "manufacturer": "Keychron",
     "url": "https://github.com/Keychron",
@@ -58,4 +59,17 @@
             {"pin_a": "A10", "pin_b": "A0"}
         ]
     }
+=======
+    "indicators": {
+        "caps_lock": "C4",
+        "scroll_lock": "A8",
+        "on_state": 0
+    },
+    "rgb_matrix": {
+        "driver": "is31fl3733"
+    },
+    "processor": "STM32F072", // F070
+    "bootloader": "stm32-dfu",
+    "board": "DURGOD_STM32_F070"
+>>>>>>> remotes/QMK/develop:keyboards/durgod/dgk6x/info.json
 }
